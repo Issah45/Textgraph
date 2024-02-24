@@ -17,13 +17,13 @@ def update(delay):
 	os.system("clear")
 
 display("Textgraph")
-display("Version 0.1.5")
-display("Codename Issen")
+display("Version 0.1.6")
+display("Codename Pixel")
 
-update(0.8)
+update(0.5)
 
 def rectangle(x, y, width, height, color="white"):
-	width = width * 2
+	width = width * 0
 	
 	w = []
 	rect = []
