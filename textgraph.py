@@ -17,13 +17,13 @@ def update(delay):
 	os.system("clear")
 
 display("Textgraph")
-display("Version 0.1.6")
-display("Codename Pixel")
+display("Version 0.1.7")
+display("Codename Starry")
 
 update(0.5)
 
 def rectangle(x, y, width, height, color="white"):
-	width = width * 0
+	width = width * 2
 	
 	w = []
 	rect = []
@@ -31,7 +31,7 @@ def rectangle(x, y, width, height, color="white"):
 	o = ""
 	
 	for i in range(width):
-		w.append("▇")
+		w.append("█")
 	for i in range(height):
 		rect.append(w)
 	
