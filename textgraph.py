@@ -12,15 +12,15 @@ def display(content, color="white", end="\n", x=0, y=0):
 	c = termcolor.colored(b+a+content, color)
 	print(c, end=end)
 
-def update(delay):
-	time.sleep(delay)
+def update(fps):
+	time.sleep(1/fps)
 	os.system("clear")
 
-display("Textgraph")
-display("Version 0.1.7")
-display("Codename Starry")
+display("▀█▀ █▀▀ ▀▄▀ ▀█▀ █▀▀ █▀█ ▄▀█ █▀█ █ █")
+display(" █  ██▄ █ █  █  █▄█ █▀▄ █▀█ █▀▀ █▀█")
+display("0.1.7      ->       Codename Starry")
 
-update(0.5)
+update(2)
 
 def rectangle(x, y, width, height, color="white"):
 	width = width * 2
