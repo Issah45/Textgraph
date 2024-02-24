@@ -1,7 +1,15 @@
-import os, time, termcolor, pyautogui
+import os, time, termcolor
 
-def display(content, color="white", end="\n"):
-	c = termcolor.colored(content, color)
+def display(content, color="white", end="\n", x=0, y=0):
+	a = ""
+	b = ""
+	
+	for i in range(x):
+		a += " "
+	for i in range(y):
+		b += "\n"
+	
+	c = termcolor.colored(b+a+content, color)
 	print(c, end=end)
 
 def update(delay):
@@ -9,9 +17,10 @@ def update(delay):
 	os.system("clear")
 
 display("Textgraph")
-display("Version 0.1.4")
-display("Codename Manylie")
-update(1)
+display("Version 0.1.5")
+display("Codename Issen")
+
+update(0.8)
 
 def rectangle(x, y, width, height, color="white"):
 	width = width * 2
