@@ -8,6 +8,10 @@ def update(delay):
 	time.sleep(delay)
 	os.system("clear")
 
+display("Textgraph")
+display("Version 0.1.3")
+update(1)
+
 def rectangle(x, y, width, height, color="white"):
 	width = width * 2
 	
