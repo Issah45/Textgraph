@@ -9,7 +9,8 @@ def update(delay):
 	os.system("clear")
 
 display("Textgraph")
-display("Version 0.1.3")
+display("Version 0.1.4")
+display("Codename Manylie")
 update(1)
 
 def rectangle(x, y, width, height, color="white"):
@@ -36,9 +37,7 @@ def rectangle(x, y, width, height, color="white"):
 			display(j, end="", color=color)
 		print()
 
-def key(k):
-	i = input()
-	if i == k:
-		return True
-	else:
-		return False
+def prompt(p, color="white"):
+	display(p, color=color, end="")
+	a = input()
+	return a
